@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickMart - Instant Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="location-selector">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="delivery-to">Delivery to</span>
+            <select id="location">
+                <option>Home - 110001</option>
+                <option>Office - 110002</option>
+            </select>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="user-actions">
+            <button class="login-btn">Login</button>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <div class="category active">Groceries</div>
+        <div class="category">Fruits & Veg</div>
+        <div class="category">Dairy & Eggs</div>
+        <div class="category">Snacks</div>
+        <div class="category">Beverages</div>
+        <div class="category">Personal Care</div>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <img src="https://via.placeholder.com/1200x200" alt="Special Offer">
+        </div>
+
+        <div class="products-container">
+            <h2>Recommended Products</h2>
+            <div class="products-grid" id="products">
+                <!-- Products will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+            <div class="empty-cart">Your cart is empty</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">₹0</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <div class="footer-section">
+            <h4>QuickMart</h4>
+            <p>Groceries delivered in minutes</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>support@quickmart.com</p>
+            <p>+91 9876543210</p>
+        </div>
+        <div class="footer-section">
+            <h4>Download App</h4>
+            <div class="app-buttons">
+                <button class="app-store-btn">
+                    <i class="fab fa-apple"></i> App Store
+                </button>
+                <button class="play-store-btn">
+                    <i class="fab fa-google-play"></i> Play Store
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
